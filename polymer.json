@@ -1,0 +1,42 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/HungerBox-app/HungerBox-app.js",
+  "fragments": [
+    "src/HungerBox-app/about-page.js",
+    "src/HungerBox-app/admin-page.js",
+    "src/HungerBox-app/food-items.js",
+    "src/HungerBox-app/home-page.js",
+    "src/HungerBox-app/login-form.js",
+    "src/HungerBox-app/my-icons.js",
+    "src/HungerBox-app/my-view404.js",
+    "src/HungerBox-app/myorder-page.js",
+    "src/HungerBox-app/payment-page.js",
+    "src/HungerBox-app/vendor-page.js",
+    "src/HungerBox-app/shared-styles.js"
+  ],
+  "sources": [
+    "src/**/*",
+    "food.jpg",
+    "manifest/**",
+    "package.json"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**",
+    "node_modules/@webcomponents/webcomponentsjs/**/*"
+  ],
+  "moduleResolution": "node",
+  "npm": true,
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  },
+  "builds": [
+    {
+      "name": "es6prod",
+      "preset": "es6-unbundled",
+      "addServiceWorker": true
+    }
+  ]
+}
